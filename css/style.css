@@ -1,0 +1,175 @@
+/*
+    *****************
+    DONE BY:-   TUMMALA KETHAN
+    *****************
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: #3b3a3a;
+  color: white;
+  display: grid;
+  grid-template-columns: 30% 60%;
+  column-gap: 10%;
+  padding: 0 5%;
+}
+
+nav .array-inputs {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  padding: 2% 0;
+}
+
+nav .array-inputs p {
+  margin-bottom: 5px;
+}
+
+nav .array-inputs input {
+  margin-bottom: 10px;
+}
+
+nav .array-inputs #a_generate {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding-left: 20%;
+}
+
+nav .array-inputs #a_generate:hover {
+  color: #ddd; /* Lighter shade on hover */
+}
+
+nav .header_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+nav .header_right .nav-heading {
+  font-size: 2.5rem;
+  padding: 10px 0;
+}
+
+nav .header_right .algos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Six equal columns */
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav .header_right .algos button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px 0;
+  font-size: large;
+  cursor: pointer;
+  position: relative;
+}
+
+nav .header_right .algos button:hover::after,
+nav .header_right .algos button:focus::after {
+  content: '';
+  position: absolute;
+  bottom: -5px; /* Distance from the text */
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: blue; /* Hover color for the underline */
+}
+
+nav .header_right .algos .butt_selected::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: green; /* Underline color for selected button */
+}
+
+section {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+section .Complexity_Containers {
+  margin-top: 10%;
+}
+
+section .Complexity_Containers .Pair_Definitions {
+  margin-top: 10%;
+}
+
+section .Complexity_Containers .Pair_Definitions p {
+  display: inline;
+}
+
+section .Complexity_Containers .Pair_Definitions p.Sub_Heading {
+  font-size: medium;
+  text-transform: none;
+}
+
+section #Info_Cont1,
+section #Info_Cont2 {
+  padding: 10% 10%;
+}
+
+section #Info_Cont1 h3,
+section #Info_Cont2 h3 {
+  text-decoration: underline;
+}
+
+section #array_container {
+  display: flex;
+  align-items: calc();
+  justify-content: center;
+  width: 100%;
+  height: 45rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* Media Queries (Uncomment and adjust as needed) */
+
+/*
+@media (max-width: 480px) {  //Mobiles
+    nav {
+        grid-template-columns: 100%;
+        padding: 5%;
+    }
+    nav .header_right .algos {
+        grid-template-columns: repeat(3, 1fr);  // Stack buttons for small screens
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1250px) {  //Tablets
+    section {
+        grid-template-columns: 25% 50% 25%;
+    }
+}
+
+@media (min-width: 1251px) {  //Laptops and up
+    section {
+        grid-template-columns: 20% 60% 20%;
+    }
+}
+*/
+
+/*
+    *****************
+    DONE BY:-   TUMMALA KETHAN
+    *****************
+*/
